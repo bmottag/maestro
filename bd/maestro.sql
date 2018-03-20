@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-03-2018 a las 13:28:20
+-- Tiempo de generación: 20-03-2018 a las 17:31:25
 -- Versión del servidor: 10.1.16-MariaDB
 -- Versión de PHP: 5.6.24
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `inspeccion`
+-- Base de datos: `maestro`
 --
 
 -- --------------------------------------------------------
@@ -61,6 +61,13 @@ CREATE TABLE `user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
+-- Volcado de datos para la tabla `user`
+--
+
+INSERT INTO `user` (`id_user`, `first_name`, `last_name`, `log_user`, `email`, `fk_id_rol`, `birthdate`, `movil`, `password`, `state`, `photo`, `address`) VALUES
+(1, 'Benjamin', 'Motta', 'bmottag', 'benmotta@gmail.com', 1, '2018-03-19', '4033089921', '25f9e794323b453885f5181f1b624d0b', 1, '', '');
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -92,7 +99,7 @@ ALTER TABLE `param_rol`
 -- AUTO_INCREMENT de la tabla `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_user` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
