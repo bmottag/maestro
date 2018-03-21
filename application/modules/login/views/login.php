@@ -9,7 +9,7 @@
 	<meta name="baseurl" content="<?php echo base_url(); ?>" />
 	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>Apartamento ZAZUE </title>
+    <title>MAESTRO </title>
 
     <!-- Bootstrap -->
 	<link href="<?php echo base_url("assets/bootstrap/vendors/bootstrap/dist/css/bootstrap.min.css"); ?>" rel="stylesheet">
