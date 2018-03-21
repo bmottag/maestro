@@ -55,7 +55,7 @@ class Login extends MX_Controller {
 						
 						$this->login_model->redireccionarUsuario();
 					}else{					
-						$data["msj"] = "<strong>" . $userExist[0]["nombres_usuario"] . "</strong> error con la contraseña.";
+						$data["msj"] = "<strong>" . $userExist[0]["first_name"] . "</strong> error con la contraseña.";
 						$this->session->sess_destroy();
 						$this->load->view('login', $data);
 					}
